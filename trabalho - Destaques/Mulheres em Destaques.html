@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mulheres Importantes da História — Destaques</title>
+  <!-- Estilos globais do projeto (mesma identidade visual do index.html na raiz) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Cabeçalho local: volta ao site principal -->
+  <header class="site-header">
+    <nav class="site-nav site-nav--detalhe" aria-label="Principal">
+      <a class="logo" href="../index.html">← Mês das Mulheres</a>
+      <a class="nav-voltar" href="../index.html#destaques">Site completo</a>
+    </nav>
+  </header>
+
+  <!-- Seção equivalente à de Destaques do index: imagens em ../assets/img/ -->
+  <main class="section section--pink" style="padding-top: calc(var(--nav-h) + 2rem);">
+    <div class="section-heading">
+      <h1>Mulheres que mudaram o mundo</h1>
+      <p class="section-lead">Conheça algumas das mulheres mais influentes da história — clique em “Saiba mais” para a história completa.</p>
+    </div>
+    <div class="grid-destaques" id="grid-destaques-trabalho"></div>
+  </main>
+
+  <footer class="site-footer site-footer--compact">
+    <p class="footer-copy">© <span id="year-trabalho"></span> — Projeto educativo</p>
+  </footer>
+
+  <!-- Dados e render compartilhados (sem duplicar lista no HTML) -->
+  <script src="../js/destaques-data.js"></script>
+  <script src="../js/destaques-ui.js"></script>
+  <script>
+    document.getElementById("year-trabalho").textContent = new Date().getFullYear();
+    /* prefixo ../ — esta pasta fica um nível abaixo da raiz do projeto */
+    window.renderCardsDestaques("grid-destaques-trabalho", "../");
+  </script>
+</body>
+</html>

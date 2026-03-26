@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combate à Violência Contra a Mulher</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div>Denuncie</div>
+        <div>
+            <a href="#problema">Violências</a>
+            <a href="#ajuda">Ajuda</a>
+        </div>
+    </nav>
+
+    <header>
+        <h2>Violência contra a mulher não é amor. É crime.</h2>
+        <button class="btn btn-primary" onclick="ligar180()">Ligar 180</button>
+        <button class="btn btn-primary" onclick="ligar190()">Emergência 190</button>
+    </header>
+
+    <section id="problema">
+        <h3>Tipos de violência (clique para entender)</h3>
+        <div class="grid">
+
+            <div class="card" onclick="toggleDescricao(this)">
+                <strong>Física</strong>
+                <div class="descricao">Agressões como tapas, socos, empurrões ou qualquer ação que machuque o corpo.
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleDescricao(this)">
+                <strong>Psicológica</strong>
+                <div class="descricao">Humilhações, ameaças, manipulação emocional e controle mental.</div>
+            </div>
+
+            <div class="card" onclick="toggleDescricao(this)">
+                <strong>Moral</strong>
+                <div class="descricao">Ofensas, xingamentos, difamação e exposição da vítima.</div>
+            </div>
+
+            <div class="card" onclick="toggleDescricao(this)">
+                <strong>Sexual</strong>
+                <div class="descricao">Qualquer ato sem consentimento, mesmo dentro de relacionamento.</div>
+            </div>
+
+            <div class="card" onclick="toggleDescricao(this)">
+                <strong>Patrimonial</strong>
+                <div class="descricao">Controle de dinheiro, destruição de bens ou impedir independência financeira.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="ajuda">
+        <h3>Como ajudar</h3>
+        <ul>
+            <li>Escute sem julgar</li>
+            <li>Ofereça apoio</li>
+            <li>Incentive denúncia</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Denúncia</h3>
+        <div class="alert">
+            <p>180 - Atendimento à Mulher</p>
+            <p>190 - Emergência</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Projeto educativo</p>
+    </footer>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

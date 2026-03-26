@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mês das Mulheres | 8 de Março — Conscientização e Apoio</title>
+  <meta name="description" content="Celebração do Dia Internacional da Mulher: história, inspiração, mulheres que mudaram o mundo e canais de apoio contra a violência.">
+
+  <!-- Tipografia unificada: corpo (Poppins/Quicksand) + títulos decorativos (Dancing Script) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600;700&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    /* Hero: estende o carrossel para mais imagens com transição suave */
+    @keyframes slideShowEnhanced {
+      0% {
+        opacity: 0;
+        transform: scale(1.08);
+      }
+      3% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      10% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      13% {
+        opacity: 0;
+        transform: scale(0.98);
+      }
+      100% {
+        opacity: 0;
+        transform: scale(1.08);
+      }
+    }
+
+    /* Mantém a base do CSS existente, mas usa a animação com janela menor (mais slides). */
+    .carousel-slide {
+      animation-name: slideShowEnhanced;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navegação fixa: âncoras para cada bloco do site -->
+  <header class="site-header" id="topo">
+    <nav class="site-nav" aria-label="Principal">
+      <a class="logo" href="#hero">Mês das Mulheres</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-links" id="nav-toggle">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="visually-hidden">Abrir menu</span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#inspiracao">Inspiração</a></li>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#destaques">Destaques</a></li>
+        <li><a href="#violencia">Violência</a></li>
+        <li><a href="#apoio">Apoio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero: carrossel de fundo + chamada principal (integração do projeto Hero) -->
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+    <div class="carousel" aria-hidden="true">
+      <!-- Sl ides atuais (imagens atuais que já estavam no Hero) -->
+      <div class="carousel-slide slide-1" style="animation-delay: 0s;"></div>
+      <div class="carousel-slide slide-2" style="animation-delay: 2s;"></div>
+      <div class="carousel-slide slide-3" style="animation-delay: 4s;"></div>
+      <div class="carousel-slide slide-4" style="animation-delay: 6s;"></div>
+      <div class="carousel-slide slide-5" style="animation-delay: 8s;"></div>
+
+      <!-- Novos slides: imagens locais da pasta "Mes das mulheres - Hero" (não substitui as existentes) -->
+      <div class="carousel-slide slide-6" style="background-image: url('./Mes%20das%20mulheres%20-%20Hero/mulheres.png'); animation-delay: 10s;"></div>
+      <div class="carousel-slide slide-7" style="background-image: url('./Mes%20das%20mulheres%20-%20Hero/mulheres-na-arte.jpg'); animation-delay: 12s;"></div>
+      <div class="carousel-slide slide-8" style="background-image: url('./Mes%20das%20mulheres%20-%20Hero/grupo-boticario-mulheres-invisiveis.jpg'); animation-delay: 14s;"></div>
+      <div class="carousel-slide slide-9" style="background-image: url('./Mes%20das%20mulheres%20-%20Hero/Topo-dia-da-mulher-ok.jpg'); animation-delay: 16s;"></div>
+      <div class="carousel-slide slide-10" style="background-image: url('./Mes%20das%20mulheres%20-%20Hero/Capa-_-1950x800-Blog-05.03-Blog-Condor-Mulheres-1024x420.webp'); animation-delay: 18s;"></div>
+    </div>
+    <div class="hero-content">
+      <h1 id="hero-title">MÊS DAS MULHERES <span class="highlight">8 de Março</span></h1>
+      <p>Celebrando a força, a coragem e as conquistas femininas. Um espaço de inspiração, respeito e igualdade para todas as mulheres.</p>
+      <div class="hero-buttons">
+        <a href="#historia" class="btn btn-outline">Conhecer a história</a>
+        <a href="#apoio" class="btn btn-outline">Canais de apoio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bloco “Florescer”: estatísticas + citações (projeto landing page) -->
+  <div class="bg-blob bg-blob--1" aria-hidden="true"></div>
+  <div class="bg-blob bg-blob--2" aria-hidden="true"></div>
+
+  <section class="section section--light inspiration" id="inspiracao">
+    <div class="inspiration-hero">
+      <div class="bg-text" aria-hidden="true">MULHER</div>
+      <h2 class="inspiration-title" data-aos="zoom-in">Poderosa</h2>
+      <p class="inspiration-sub" data-aos="fade-up" data-aos-delay="200">Sua melhor versão começa hoje</p>
+    </div>
+
+    <div class="stats" data-aos="fade-up">
+      <div class="stat-item">
+        <h3>7</h3>
+        <p>Grandes vozes</p>
+      </div>
+      <div class="stat-item">
+        <h3>∞</h3>
+        <p>Inspiração</p>
+      </div>
+      <div class="stat-item">
+        <h3>100%</h3>
+        <p>Sua força</p>
+      </div>
+    </div>
+
+    <div class="quotes-wrap">
+      <div class="quote-card" data-aos="fade-up">
+        <p class="quote-text">"Pés, para que os quero, se tenho asas para voar?"</p>
+        <div class="author-box">
+          <span class="author-line"></span>
+          <span class="author">Frida Kahlo</span>
+          <span class="author-line"></span>
+        </div>
+      </div>
+      <div class="quote-card" data-aos="fade-up">
+        <p class="quote-text">"Liberdade é pouco. O que eu desejo ainda não tem nome."</p>
+        <div class="author-box">
+          <span class="author-line"></span>
+          <span class="author">Clarice Lispector</span>
+          <span class="author-line"></span>
+        </div>
+      </div>
+      <div class="quote-card" data-aos="fade-up">
+        <p class="quote-text">"Nada é impossível, a própria palavra diz: 'Eu sou possível'."</p>
+        <div class="author-box">
+          <span class="author-line"></span>
+          <span class="author">Audrey Hepburn</span>
+          <span class="author-line"></span>
+        </div>
+      </div>
+      <div class="quote-card" data-aos="fade-up">
+        <p class="quote-text">"Você pode encontrar muitas derrotas, mas não deve se deixar derrotar."</p>
+        <div class="author-box">
+          <span class="author-line"></span>
+          <span class="author">Maya Angelou</span>
+          <span class="author-line"></span>
+        </div>
+      </div>
+      <div class="quote-card" data-aos="fade-up">
+        <p class="quote-text">"Não espere por oportunidades, crie-as."</p>
+        <div class="author-box">
+          <span class="author-line"></span>
+          <span class="author">Madam C.J. Walker</span>
+          <span class="author-line"></span>
+        </div>
+      </div>
+      <div class="quote-card" data-aos="fade-up">
+        <p class="quote-text">"Eu não sou livre enquanto qualquer mulher não for livre."</p>
+        <div class="author-box">
+          <span class="author-line"></span>
+          <span class="author">Audre Lorde</span>
+          <span class="author-line"></span>
+        </div>
+      </div>
+      <div class="quote-card" data-aos="fade-up">
+        <p class="quote-text">"A pergunta não é quem vai me deixar; é quem vai me parar."</p>
+        <div class="author-box">
+          <span class="author-line"></span>
+          <span class="author">Ayn Rand</span>
+          <span class="author-line"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- História do 8 de março: cartão com efeito tilt (projeto Sobre o dia) -->
+  <section class="section section--gradient" id="historia">
+    <div class="section-heading" data-aos="fade-up">
+      <h2>Por que 8 de março?</h2>
+      <p class="section-lead">Um marco de luta e conquistas.</p>
+    </div>
+    <div class="historia-card-wrap">
+      <article class="historia-card" id="historia-card" tabindex="0">
+        <h3>8 de março não é só uma data. É um marco de luta.</h3>
+        <p>O Dia Internacional da Mulher tem origem na luta das mulheres por melhores condições de trabalho, igualdade de direitos e reconhecimento na sociedade.</p>
+        <p>No início do século XX, mulheres ao redor do mundo começaram a se mobilizar contra jornadas exaustivas, baixos salários e a falta de direitos básicos. Um dos marcos históricos foi a Greve das operárias têxteis de Nova York, onde trabalhadoras protestaram por dignidade e justiça.</p>
+        <p>Em 1910, durante a Conferência Internacional das Mulheres Socialistas, a ativista Clara Zetkin propôs a criação de uma data anual para celebrar as conquistas das mulheres e fortalecer a luta por igualdade.</p>
+        <p>Já em 1975, a Organização das Nações Unidas oficializou o 8 de março como o Dia Internacional da Mulher.</p>
+        <p>Hoje, a data vai muito além de homenagens: é um momento de reflexão, conscientização e ação em busca de uma sociedade mais justa e igualitária.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Destaques: cards com imagens em assets/img (dados em js/destaques-data.js) -->
+  <section class="section section--pink" id="destaques">
+    <div class="section-heading" data-aos="fade-up">
+      <h2>Mulheres que mudaram o mundo</h2>
+      <p class="section-lead">Conheça algumas trajetórias que inspiram gerações.</p>
+    </div>
+    <div class="grid-destaques" id="grid-destaques" data-aos="fade-up"></div>
+  </section>
+
+  <!-- Violência: tom mais sério, cards expansíveis (projeto denúncia) -->
+  <section class="section section--dark" id="violencia">
+    <div class="violencia-inner">
+      <div class="section-heading section-heading--light" data-aos="fade-up">
+        <h2>Violência contra a mulher não é amor. É crime.</h2>
+        <p class="section-lead section-lead--muted">Informação é proteção. Em emergência, priorize sua segurança.</p>
+      </div>
+      <div class="violencia-actions" data-aos="fade-up">
+        <button type="button" class="btn btn-danger" data-tel="180">Ligar 180</button>
+        <button type="button" class="btn btn-danger" data-tel="190">Emergência 190</button>
+      </div>
+
+      <h3 class="violencia-subtitle" data-aos="fade-up">Tipos de violência <span class="hint">(toque para ver)</span></h3>
+      <div class="violencia-grid" id="violencia-grid"></div>
+
+      <div class="violencia-help" data-aos="fade-up">
+        <h3>Como ajudar quem sofre violência</h3>
+        <ul>
+          <li>Escute sem julgar</li>
+          <li>Ofereça apoio emocional e prático quando possível</li>
+          <li>Incentive o busca de ajuda profissional e denúncia com segurança</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Canais de apoio: texto expandido (projeto joao.html) integrado ao layout -->
+  <section class="section section--apoio" id="apoio">
+    <div class="apoio-card" data-aos="fade-up">
+      <h2>Canais de apoio e denúncia: você não está sozinha</h2>
+      <p>Buscar ajuda é um passo importante e corajoso. A denúncia é essencial para interromper a violência, proteger vidas e garantir seus direitos. As informações são tratadas com sigilo e respeito, priorizando a sua segurança.</p>
+
+      <div class="alerta-urgente" role="alert">
+        <strong>Atenção:</strong> em caso de perigo imediato ou violência em andamento, ligue <strong>190</strong> agora.
+      </div>
+
+      <div class="canais-grid">
+        <div class="canal-item">
+          <strong>180 — Central de Atendimento à Mulher</strong>
+          <p>Atendimento gratuito, 24 horas. Escuta, orientação e encaminhamento para serviços de apoio em todo o Brasil. Denúncias e dúvidas com segurança.</p>
+        </div>
+        <div class="canal-item">
+          <strong>190 — Polícia Militar</strong>
+          <p>Emergências e risco imediato. Equipe pode ser enviada ao local com prioridade.</p>
+        </div>
+        <div class="canal-item">
+          <strong>Delegacias especializadas (DEAMs)</strong>
+          <p>Acolhimento, registro de ocorrência e medidas protetivas quando aplicável.</p>
+        </div>
+      </div>
+
+      <div class="orientacoes-box">
+        <h3>Quando usar cada canal?</h3>
+        <ul>
+          <li><strong>Urgência ou risco imediato:</strong> 190.</li>
+          <li><strong>Orientação, apoio ou denúncia sem urgência:</strong> 180.</li>
+          <li><strong>Registro formal ou proteção legal:</strong> delegacia especializada.</li>
+        </ul>
+      </div>
+
+      <p class="apoio-note">Em muitos estados há atendimento online para registrar ocorrências e buscar ajuda. Se não puder denunciar, alguém de confiança pode procurar orientação por você.</p>
+
+      <div class="apoio-final">
+        Você não está sozinha. Existe apoio, proteção e pessoas preparadas para ajudar.
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p class="footer-brand">Mês das Mulheres</p>
+    <p class="footer-tag">Projeto educativo — conscientização e respeito.</p>
+    <p class="footer-copy">© <span id="year"></span></p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/destaques-data.js"></script>
+  <script src="js/destaques-ui.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

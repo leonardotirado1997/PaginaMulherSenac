@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destaque — Mês das Mulheres</title>
+  <meta name="description" content="História completa de uma mulher que mudou o mundo.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="pagina-detalhe">
+  <!-- Cabeçalho simples com volta ao site principal -->
+  <header class="site-header">
+    <nav class="site-nav site-nav--detalhe" aria-label="Principal">
+      <a class="logo" href="index.html">← Mês das Mulheres</a>
+      <a class="nav-voltar" href="index.html#destaques">Voltar aos destaques</a>
+    </nav>
+  </header>
+
+  <main class="detalhe-main" id="detalhe-main">
+    <!-- Conteúdo preenchido por js/detalhes.js a partir do ?id= na URL -->
+    <p class="detalhe-erro" id="detalhe-erro" hidden>Não encontramos este destaque. <a href="index.html#destaques">Voltar à lista</a>.</p>
+
+    <article class="detalhe-artigo" id="detalhe-artigo" hidden>
+      <figure class="detalhe-figura">
+        <img class="detalhe-imagem" id="detalhe-imagem" src="" alt="">
+      </figure>
+      <div class="detalhe-conteudo">
+        <h1 class="detalhe-titulo" id="detalhe-titulo"></h1>
+        <div class="detalhe-textos" id="detalhe-textos"></div>
+        <a class="btn btn-detalhe-voltar" href="index.html#destaques">← Voltar aos destaques</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer site-footer--compact">
+    <p class="footer-copy">© <span id="year-detalhe"></span> — Mês das Mulheres</p>
+  </footer>
+
+  <script src="js/destaques-data.js"></script>
+  <script src="js/detalhes.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>8 de Março</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #F8BBD0, #f3cfdb, #f1cad8);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .caixa {
+            background: white;
+            max-width: 700px;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        h1 {
+            color: #E91E63; /* corrigido pra rosa mais forte */
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="caixa" id="caixa">
+        <h1>8 de março não é só uma data. É um marco de luta.</h1>
+
+        <p>
+            O Dia Internacional da Mulher tem origem na luta das mulheres por melhores condições de trabalho, igualdade
+            de direitos e reconhecimento na sociedade.
+            <br><br>
+            No início do século XX, mulheres ao redor do mundo começaram a se mobilizar contra jornadas exaustivas,
+            baixos salários e a falta de direitos básicos. Um dos marcos históricos foi a Greve das operárias têxteis de
+            Nova York, onde trabalhadoras protestaram por dignidade e justiça.
+            <br><br>
+            Em 1910, durante a Conferência Internacional das Mulheres Socialistas, a ativista Clara Zetkin propôs a
+            criação de uma data anual para celebrar as conquistas das mulheres e fortalecer a luta por igualdade.
+            <br><br>
+            Já em 1975, a Organização das Nações Unidas oficializou o 8 de março como o Dia Internacional da Mulher.
+            <br><br>
+            Hoje, a data vai muito além de homenagens: é um momento de reflexão, conscientização e ação em busca de uma
+            sociedade mais justa e igualitária.
+        </p>
+    </div>
+
+    <script>
+        const caixa = document.getElementById("caixa");
+
+        caixa.addEventListener("mousemove", (e) => {
+            const rect = caixa.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+
+            const rotateX = (y - centerY) / 20;
+            const rotateY = (centerX - x) / 20;
+
+            caixa.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
+            caixa.style.boxShadow = "0 20px 40px rgba(0,0,0,0.3)";
+        });
+
+        caixa.addEventListener("mouseleave", () => {
+            caixa.style.transform = "rotateX(0) rotateY(0) scale(1)";
+            caixa.style.boxShadow = "0 8px 25px rgba(0,0,0,0.2)";
+        });
+    </script>
+
+</body>
+
+</html>
